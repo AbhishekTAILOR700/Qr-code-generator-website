@@ -1,0 +1,278 @@
+/* @font-face {
+    /* font-family: Spring;
+    src: url("./TAN-SPRING.otf"); */
+    /* font-family: 'Poor Story', system-ui; */
+  /* } */ */
+
+body{
+    font-family: 'Poor Story', system-ui;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    /* justify-items: center; */
+    flex-direction: row;
+    justify-content: center;
+    width: 100vb;
+    height: 100hb;
+}
+
+h3{
+  font-family: 'Poor Story', system-ui;
+}
+
+.innerDiv{
+  position: relative;
+  top: 8%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.gradient-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(73deg,#cf8c95,#8b96ef,#b913f2,#38c5a3);
+    background-size: 240% 240%;
+    animation: gradient-animation 12s ease infinite;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+.form{
+   box-shadow: 1px 1px 20px 1px rgb(37, 32, 32);
+    position: relative;
+    top: 30px;
+    height: 500px;
+    width: 340px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    background-color: white;
+    display: flex;
+    /* justify-items: normal; */
+    align-items: center;
+    /* justify-items: center; */
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.title{
+    /* align-self: center; */
+    /* padding: auto; */
+    position: relative;
+    margin: 25px 0 0 0;
+    /* left: 50px; */
+    justify-self: center;
+    font-family: 'Poor Story', system-ui;
+    font-size: 30px;
+    text-align: center;
+}
+
+.inputArea{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 2px solid #2d9fd9;
+     /* color: #a0d18c; */
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 20px;
+     /* margin: 20px; */
+}
+
+.imgArea{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 18px;
+}
+
+input[type=text]:focus {
+     outline: none;
+     border: 2px solid #a0d18c;
+     /* color: #2d9fd9; */
+}
+
+img{
+  
+    width: 250px;
+    height: 250px;
+}
+
+
+/* *********************************************Button******************************** */
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%);
+    /* margin: 10px; */
+    padding: 15px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+    top: 420px;
+  }
+
+
+  .buttonClass{
+    display: flex;
+    justify-content: center;
+  }
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+
+
+  /* ******************************* FOOTER ************************************* */
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* display: inline; */
+    /* display: block; */
+    font-family: 'Poor Story', system-ui;
+    color: white;
+    position: relative;
+    /* bottom: 10px; */
+    margin: 0 auto;
+    text-align: center;
+    top: 120px;
+    font-size: 20px;
+    /* left: 34%; */
+    /* margin-bottom: 10px; */
+  }
+
+  a{
+    /* position:absolute;
+    top: 670px;
+    left: 42%;
+    margin: auto;
+    font-size: 30px; */
+  }
+  a:link {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: white;
+    display: inline-block;
+    /* background-color: transparent; */
+    /* text-decoration: underline; */
+    /* font-size: 1.4rem; */
+    /* -ms-transform: scale(1.3, 1.3); 
+    -webkit-transform: scale(1.3, 1.3); Safari */
+    transform: scale(1.2);
+    transition: 340ms;
+    /* color: #c6e2ff; */
+    /* animation: neon .08s ease-in-out infinite alternate; */
+    
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+  .githubImg{
+    height: 30px;
+    width: 30px;
+    /* display: block; */
+    display: inline;
+    /* padding: 5px; */
+    /* padding: 15px 25px 0 0; */
+  }
+  .githubImg:hover{
+    /* height: 45px;
+    width: 45px; */
+    transform: scale(1.2);
+    transition: 340ms;
+  }
+
+  .instaImg{
+    height: 32px;
+    width: 32px;
+    /* padding: 15px 0 0 25px; */
+  }
+
+  .instaImg:hover{
+    /* height: 48px;
+    width: 48px; */
+    transform: scale(1.2);
+    transition: 340ms;
+  }
+
+  .gitOuter{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .containerGit{
+    display: flex;
+    /* justify-content: center; */
+    width: 200px;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  /* @keyframes neon {
+    from {
+      text-shadow:
+      0 0 6px rgba(255, 255, 255, 0.92),
+      0 0 30px rgba(255, 255, 255, 0.989),
+      0 0 12px rgb(255, 255, 255),
+      0 0 21px rgba(255, 255, 255, 0.92),
+      0 0 34px rgba(252, 253, 253, 0.78),
+      0 0 54px rgba(216, 221, 226, 0.92);
+    }
+    to {
+      text-shadow:
+      0 0 6px rgba(248, 250, 250, 0.98),
+      0 0 30px rgb(251, 251, 251),
+      0 0 12px rgba(225, 227, 229, 0.58),
+      0 0 22px rgba(237, 239, 241, 0.84),
+      0 0 38px rgba(237, 241, 246, 0.88),
+      0 0 60px rgb(241, 244, 248);
+    }
+  } */
+  
+  

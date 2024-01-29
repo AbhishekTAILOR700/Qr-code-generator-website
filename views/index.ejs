@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link2Qr</title>
+    <!-- <link rel="icon" href="../public/favicon.ico"> -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+</head>
+<body class="gradient-background">
+    <!--  -->
+    <div class="innerDiv">
+
+        <!-- When Qr is Generated -->
+        <% if(locals.flag === 1){%>
+            
+            <div class="form" >
+                <form action="/" method="post">
+                    <div>
+                        <H2 class="title">Qr-Image Generator</H2>
+                    </div>
+                    <!-- <input required class="inputArea" type="text" name="myInput" placeholder="🔗 Enter your URL" size="30"> -->
+                    <div>
+                        <h3>Scan Me 👇</h3>
+                    </div>
+                    
+                    <div class="imgContainer">
+                        <div class="imgArea">
+                            <img src="./Qr-Image.png" alt="Qr-Image">
+                        </div>           
+                    </div>
+                
+                <div class="buttonClass">
+                    <button class="btn-grad" type="submit" value="OK">Convert another Link</button>
+                </div>
+                
+            </form>
+        </div>
+        
+        <% }else{ %>                        <!-- When not generated -->
+            <div class="form" >
+                <form action="/submit" method="post">
+                    <H2 class="title">Qr-Image Generator</H2>
+                    <input required class="inputArea" type="text" name="myInput" placeholder="🔗 Enter your URL" size="30">
+                    
+                    <div class="imgArea">
+                        <div>
+
+                            <img src="./AbhishekFrench.png" alt="Qr-Image">
+                        </div>
+                    </div>
+                    <!-- <input type="text" name="yes working" value="yes"> -->
+                    
+                    <div class="buttonClass">
+                        <button class="btn-grad" type="submit" value="OK">Generate</button>
+                    </div>
+                </form>
+            </div>
+            <% }%>
+            
+            <!-- <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
+        </div>
+        <div class="footer">
+            <div >
+                <a href="mailto:abhishektailor700@gmail.com">** Created by : AbhishekTailor © <%= locals.year%> **  </a>
+            </div>
+
+            <div class="gitOuter">
+
+                <div class="containerGit">
+                    <div>
+                        <a href="https://github.com/AbhishekTAILOR700"><img class="githubImg" src="./github-mark-white.png" alt="Github"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/abhishektailor700/"><img class="instaImg" src="./instagram.png" alt="insta"></a>
+                    </div>
+                </div>
+            </div>
+        </div >
+        
+            <script src="../index.js"></script>
+        </body>
+        </html>
